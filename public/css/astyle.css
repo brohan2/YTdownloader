@@ -1,0 +1,62 @@
+/* 
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Yeseva+One&display=swap'); */
+  *{
+    padding: 0;
+    margin: 0;
+  }
+body{
+    overflow: scroll;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar{
+    background-color: #00235B;
+    /* color: white; */
+  }
+  .navbar ul{
+    display: flex;
+    justify-content: center;
+    /* color: white; */
+  }
+  .navbar ul li{
+    flex-direction: column;
+    padding: 1rem 0.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    color: white;
+  }
+  .navbar ul li a:hover{
+    background-color: red;
+    color: white;
+  }
+  .navbar ul li a:active{
+    background-color: red;
+    color: white;
+  }
+  .navbar ul li a:visited{
+    color: white;
+  
+  }
+
+  #head2{
+    color: black;
+      display: flex;
+      justify-content: center;
+      font: 'San Francisco', Helvetica, Arial, san-serif;
+      font-size: 40px;
+      font-weight: bolder;
+
+    }
+.paragraph{
+    padding: 5px;
+    text-align: center;
+}

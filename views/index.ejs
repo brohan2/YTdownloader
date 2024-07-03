@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Youtube, Mp3, Youtube Downloader, Video Downloader, Youtube to Mp3, link downloader,">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" media="screen and (max-width:700px) and (min-width:300px)" href="/css/phone.css">   
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+     <title>Youtube Video and Audio Downloader</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            
+            <li><a href="/" >Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/PP">Privacy Policy</a></li>
+        </ul>
+    </nav>
+    <div class="top-container">
+      <!-- LOGO -->
+      
+      <img id="logo" src="/Images/newlogo.png" alt="not yet found">
+      
+      
+        <form action="/" method="POST" id="form">
+            <h1> Best Youtube Video And Audio Downloader Online FREE</h1>
+      <h4>Enter the video URL</h4>
+      <div>
+        
+        <input type="text" name="videoID" placeholder="Paste your video link here">
+        <!-- <input type="text" id="video" name="videoID" placeholder="Paste your video link here" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"> -->
+        <button id="submit-btn">Convert</button>
+
+      </div>
+        </form>
+    </div>
+
+    <div class="bottom-container">
+        <% if (typeof success != "undefined" && success) { %>
+            <div class="success">
+              <iframe width=auto height=auto src='https://www.youtube.com/embed/<%= nid %> ' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <p> <%= song_title %> </p>
+                <a href="<%= m %>" ><button id="download-btn">DOWNLOAD Audio</button></a>
+        <a href="<%= v %>" target="_blank"><button id="download-btn">DOWNLOAD Video(High)</button></a>
+        <a href="<%= lq %>" target="_blank"><button id="download-btn">DOWNLOAD Video(Low)</button></a>
+
+    </div>
+    <% } else if (typeof success != "undefined" && !success) { %>
+        <div class="errors">
+            <p> <%= message %> </p>
+          </div>
+        <% } %>
+    </div>
+
+<h2 id="head2">How to Download YouTube Videos?</h2>
+
+<h2 id="head2">How to Download YouTube Videos to MP3?</h2>
+
+  <!-- HOW TO DOWNLOAD -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-5 mx-auto flex flex-wrap">
+
+      <div class="flex relative pt-0 pb-10 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-800 text-white relative z-10 title-font font-medium text-sm">1</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div class="flex-shrink-0 w-10 h-10 bg-red-100 text-red-500 rounded-full inline-flex items-center justify-center">
+           <!-- COPY -->
+           <img src="/Images/icons8-copy.gif" alt="">
+  <path d="M3 16V4C3 2.89543 3.89543 2 5 2H15M9 22H18C19.1046 22 20 21.1046 20 20V8C20 6.89543 19.1046 6 18 6H9C7.89543 6 7 6.89543 7 8V20C7 21.1046 7.89543 22 9 22Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+            
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Copy Link from YouTube</h2>
+            <p class="leading-relaxed">Click "Share" and Copy the link from YouTube video</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-800 text-white relative z-10 title-font font-medium text-sm">2</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div class="flex-shrink-0 w-10 h-10 text-red-500 rounded-full inline-flex items-center justify-center">
+            <!--PASTE  -->
+           <img src="/Images/icons8-spinner.gif" alt="">
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Paste and Convert</h2>
+            <p class="leading-relaxed">Paste Youtube video URL into the search box, then click "Convert" button.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-800 text-white relative z-10 title-font font-medium text-sm">3</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div class="flex-shrink-0 w-10 h-10  text-red-500 rounded-full inline-flex items-center justify-center">
+          <img src="/Images/icons8-download.gif" alt="">
+            
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Download</h2>
+            <p class="leading-relaxed">Wait until conversion is completed and then click "Download" button as required</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+<!-- FEATURES -->
+
+   <div class="blackback">
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-10">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">FEATURES</h1>
+        <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p> -->
+      </div>
+      
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="backcolour">
+          <div class="border-2 border-blue-500 px-4 py-6 rounded-lg">
+            <div class="centericon">  <img src="/Images/icons8-rocket.gif" alt=""> </div>
+            <h2 class="title-font font-medium text-2xl text-gray-900">Fast Downloading</h2>
+            <p class="leading-relaxed">Download Youtube videos with ultra-fast speed with <b> ytmp3 Downloader</b></p>
+          </div>
+        </div>
+        </div>
+     
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-blue-500 px-4 py-6 rounded-lg" >
+            <div class="centericon"> <img src="/Images/icons8-secure.gif" alt=""></div>
+          
+            <h2 class="title-font font-medium text-3xl text-gray-900">Fully Secure</h2>
+            <p class="leading-relaxed"> <b>YtMp3downloaderr.com </b>website is 100% secure. It has an active SSL certificate that ensures all data is encrypted while in transit</p>
+          </div>
+        </div>
+     
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-blue-500 px-4 py-6 rounded-lg">
+            <div class="centericon">   <img src="/Images/icons8-loading-infinity.gif" alt=""> </div>
+            <h2 class="title-font font-medium text-3xl text-gray-900">Unlimited Downloads</h2>
+            <p class="leading-relaxed">Download as many videos and audios as you want & Enjoy our service</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-blue-500 px-4 py-6 rounded-lg">
+            <div class="centericon">   <img src="/Images/free.gif" alt=""> </div>
+            <h2 class="title-font font-medium text-3xl text-gray-900">Free Downloads</h2>
+            <p class="leading-relaxed">Download as many videos and audios as you want Free of cost with our website ytdownloaderr.online</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    </div>
+<h1 id="head2">FAQ's</h1>
+    <section class="text-gray-600 body-font overflow-hidden">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="-my-20 divide-y-2 divide-gray-100">
+          <div class="py-8 flex flex-wrap md:flex-nowrap">
+            <!-- <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span class="font-semibold title-font text-gray-700">CATEGORY</span>
+              <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+            </div> -->
+            <div class="md:flex-grow">
+              <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">How to download YouTube videos online?</h2>
+              <p class="leading-relaxed">Open YouTube.Com And Go To The Video You Want To Download Copy The Link Of The Video And Go Paste In ytdownloaderr.com
+                Select The Format You Like (MP3, MP4)
+                Click The “Download” Div To Save The Video
+                Now You Can Enjoy The High Quality Videos And Playlists Offline! Works In Chrome, Firefox, Or Any Other Browser.</p>
+   
+            </div>
+          </div>
+          <div class="py-8 flex flex-wrap md:flex-nowrap">
+            <!-- <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span class="font-semibold title-font text-gray-700">CATEGORY</span>
+              <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+            </div> -->
+            <div class="md:flex-grow">
+              <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Is our service free?</h2>
+              <p class="leading-relaxed">Yes! And Our Video Downloader Will Stay Free For Everyone. We Are Happy To Help People And In Order To Keep The Video Download Tool Alive, We Let Our Advertisers Pay To Support The Service.
+              </p>
+              <!-- <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a> -->
+            </div>
+          </div>
+          <div class="py-8 flex flex-wrap md:flex-nowrap">
+            <!-- <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span class="font-semibold title-font text-gray-700">CATEGORY</span>
+              <span class="text-sm text-gray-500">12 Jun 2019</span>
+            </div> -->
+            <div class="md:flex-grow">
+              <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Where do the downloaded files get saved?
+              </h2>
+              <p class="leading-relaxed">Files you've downloaded are automatically saved in the Downloads folder or the "download history" section on your device.</p>
+              <!-- <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <footer class="text-gray-600 body-font">
+      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <div class="centericon2" id="logo2"> <img src="/Images/YTlogo.png" alt=""></div>
+          <span class="ml-3 text-xl"><b>Ytdownloaderr.online</b> </span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 YTD —
+          <a href="mailto:rcsdevelopers3@gmail.com" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">rcsdevelopers3@gmail.com</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-500" href="#">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="#">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="#">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="#">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+<p style="color: black;" class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 YTD —>Notice: This website is not officially associated with Youtube. It does not host or entertain any pirated or copyrighted content on its server and all uploaded videos are directly saved from their CDN servers.
+</p>
+</body>
+</html>
